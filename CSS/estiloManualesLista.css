@@ -1,0 +1,39 @@
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 150px;
+    table-layout: auto;
+    padding: 1rem;
+    margin: 0 auto; /* para centrar horizontalmente */
+    margin-left: 10px; /* nuevo */
+}
+
+th, td {
+    text-transform: uppercase;
+    padding: 12px 15px;
+    text-align: center; /* para centrar el contenido */
+    font-family: Arial;
+    border-bottom: solid 1px #AEB6BF;
+    border: solid 1px #AEB6BF;
+    margin-right: 0px; /* nuevo */
+}
+
+caption {
+    font-size: 25px;
+    font-family: Arial;
+    padding: 0.3em;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+thead {
+    border-collapse: collapse;
+    background-color: #5D6D7E;
+    border-bottom: solid 3px black;
+    text-align: center;
+}
+
+a {
+    color: black;
+  }
+  

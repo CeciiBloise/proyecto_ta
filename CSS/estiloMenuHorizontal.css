@@ -1,0 +1,48 @@
+* {
+    font-family: Arial;
+  }
+  
+  header {
+    margin: auto;
+    width: 100%;
+    display: table;
+  }
+  
+  .navMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5D6D7E;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  .legajo {
+    float: right;
+
+  }
+  
+  li a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  a:hover {
+    background-color: #3498DB;
+    border: 0.5px solid #3498DB;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+  
+  .navMenu:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+ 

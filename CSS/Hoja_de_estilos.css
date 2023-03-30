@@ -1,0 +1,149 @@
+/** Hoja de estilos - maquetado **/
+
+/*Selector universal*/
+*{
+    margin: 0;/*el margen de la hoja*/
+    padding: 0;/*el espacio de relleno*/
+    box-sizing: border-box; /*para que no se desborden las cajas unas con otras*/
+    font-family: 'Audiowide', Arial, Helvetica, sans-serif; /*establece una lista de fuentes */
+}
+
+body{
+    height: 100vw;
+}
+.flex-contenedor {
+    background: lightcoral;
+    /*Flexbox*/
+    display: flex;
+    /*flex-flow: column wrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: stretch; /*dudoso*/
+   /* align-content: stretch;/*dudoso*/
+    margin: 0 auto;
+    /*padding: auto;*/
+    max-width: 12000px;
+    width: 100%; 
+    height: 100%
+    /*background-size: cover;/*para que el contenido se adapte*/
+    }
+
+    .menu {
+        background: #3f393b;
+
+        /*Flexbox*/
+        display: flex;
+        flex: 1 1 auto;
+        justify-content: center;
+
+        /*Tamaño de caja*/
+        height: 100%;
+        width: 10%;
+        padding: 30px;        
+        /*Titulo*/
+        font-size: 18px;
+    }
+
+    .contenedor {
+        background: black;
+
+        /*Flexbox*/
+        display: flex;
+        flex: 1 1 auto;
+        flex-flow: column wrap;
+        align-items: center; 
+        align-content: stretch;
+
+        /*Tamaño de caja*/
+        margin: 0;
+        height: 100%;
+        width: 70%;
+
+        
+    }
+        
+        .header {
+            background: #000;
+            box-shadow: 0 4px 5px grey;
+            /*Flexbox*/
+            display: flex;
+            justify-content: center;/*me centra el contenido del la caja*/
+            align-items: center; /*Alineacion vertical*/
+            flex: 1 1 auto;
+
+            /*Tamaño de caja*/
+            height: 15%;
+            width: 100%;
+            margin: auto;
+
+            /*Titulo*/
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .info {
+           background: white;
+           /*Flexbox*/
+           display: flex;
+           flex: 1 1 auto;
+           
+           align-items: stretch;
+           align-content: center;
+         
+           /*Tamaño de caja*/
+           height: 85%;
+           padding: 10px;
+
+           /*Desbordamiento*/
+           overflow: scroll;
+
+           /*Texto*/
+           font-size: 16px;
+
+        }
+
+    .footer {
+        background: grey;
+        /*Flexbox*/
+        flex: 1 1 auto;
+        align-content: flex-end;
+
+        /*Tamaño de caja*/
+        padding: 2% 0;
+
+        /*Texto*/
+        /*Titulo*/
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+    }
+
+    li {
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        justify-content: space-evenly;
+
+      }
+    li a{
+        text-decoration:none;
+    display:inline-block;
+    border:2px solid #000;
+    color:#fff;
+    background-color:#000;
+    }
+    
+p{
+    color: #000;
+}
+
+    /*Fijo tamaño*/
+    html {
+        font-size: 70%;
+    }
+    @media (min-width: 600px) {
+        html{ 
+            font-size: 100%;
+        }
+    }

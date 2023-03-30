@@ -1,0 +1,79 @@
+/*ESTILO MENU DE LISTA DE PASO A NIVEL y PASO PEATON*/
+*,
+*:before,
+*:after{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background: #F2F3F4;
+    font-family: Arial;
+
+}
+.titulo{
+    position: relative;
+    margin: .5%;
+    top: 15%;
+  /*  left: 30%;*/
+}
+.menuPP{
+    position: relative;
+    top: 15%;
+    left: 2%;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+li a:before{
+
+    content: '';
+    position: absolute;
+    top: 68px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #F2F3F4;
+    transition: all 300ms cubic-bezier(1, 0, 0, 1);
+}
+li a:hover::before{
+    width: 110%;
+}
+a:hover{
+    color: black;
+}
+li a{
+    color: #5D6D7E;
+    display: block;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+header{
+    margin: auto;
+    width: 100%;
+    display: table;
+}
+.navMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #5D6D7E;
+
+}
+ol {
+    float: left;   
+}
+ol a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ol a:hover {
+    background-color: #3498DB;
+    border: 0.5px solid #3498DB;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    color: white;
+}

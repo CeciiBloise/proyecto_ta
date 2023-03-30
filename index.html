@@ -1,0 +1,39 @@
+<!--Login-->
+<!DOCTYPE html> <!-- version html5 -->
+<html lang="es"> <!-- tipo de lenguaje -->
+
+
+    <head>
+        <meta charset="utf-8" /> <!-- tipos de caracter -->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        
+        <!-- Estilos -->
+         <link rel="stylesheet" href="CSS/estiloIndex.css"/>
+
+        <title>Trenes Argentinos</title> <!--titulo de la pagina -->
+    
+    </head>
+
+    <body>
+      <form method="post" action="conexion_y_sesion/login.php">
+          <main>
+            <div class="form">
+              <h1> INGRESO AL SISTEMA </h1>
+              <br>
+              <div class="grupo">
+                <label class="titulo" for=""> LEGAJO </label>
+                <input type="number" name="legajo" required>
+             </div>
+             <div class="grupo">
+                <label class="titulo" for=""> CONTRASEÑA </label>
+                <input type="password" name="contraseña" required>
+             </div>
+
+             <button class="boton" type="submit" name="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="miModal"> INGRESAR </button>
+            </div>
+          </main>
+       </form>  
+         
+    </body>
+
+</html>
