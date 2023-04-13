@@ -27,10 +27,10 @@ $url="pdf_manuales/".$carpeta;
 while($elemento=readdir($directorio)){
     if($elemento != '.' && $elemento != '..'){
         if(is_dir($directorio.$elemento)){
-            $listar .="<ul><a href='$url/$elemento' target='_parent'>$elemento</a></ul><br/>";
+            $listar .="<ul><a href='$url/$elemento' target='_blank'>$elemento</a></ul><br/>";
         }else{
             //error_reporting(0);
-            $listar .="<ul><a href='$url/$elemento' target='_parent'>$elemento</a></ul><br/>";   
+            $listar .="<ul><a href='$url/$elemento' target='_blank'>$elemento</a></ul><br/>";   
         }
     }
 }

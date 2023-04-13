@@ -1,48 +1,20 @@
 /*estilo registro de usuarios*/
 
-/* Estilos para dispositivos menores a 768px (celu) */
-@media (max-width: 767px) {
-  .form_carga{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    font-weight: bold;
-    height: 100vh;
-    position: relative;
-    z-index: 0;
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
+.form_carga{
+  display: flex;
+  height: auto;
 }
 
-/* Estilos para dispositivos entre 768px y 1024px (tablets) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .form_carga{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    font-weight: bold;
-    height: 100vh;
-    position: relative;
-    z-index: 0;
-    margin-top: 70px;
-    margin-bottom: 70px;
-  }
-}
+.form {
+  background-color: #F2F3F4;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-left: auto;
 
-/* Estilos para dispositivos mayores a 1024px (compu) */
-@media (min-width: 1025px) {
-  .form_carga{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    font-weight: bold;
-    height: 100vh;
-    position: relative;
-    z-index: 0;
-    margin-top: 120px;
-    margin-bottom: 120px;
-  }
 }
 
 .titulo{
@@ -50,14 +22,6 @@
   justify-content: center;
   text-align: center;
   font-size: 30px;
-}
-
-.form {
-  background-color: #F2F3F4;
-  width: 400px;
-  border-radius: 8px;
-  padding: 20px 40px;
-  box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
 }
 
 .inputContainer{

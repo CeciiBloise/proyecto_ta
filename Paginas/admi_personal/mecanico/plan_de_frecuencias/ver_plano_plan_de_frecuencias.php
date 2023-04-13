@@ -33,7 +33,7 @@ $legajo = $_SESSION['legajo'];
 
     <body>
       <div class="mi-iframe">
-        <iframe src="../../../admi_general/mecanico/plan_de_frecuencias/planos_plan_de_frecuencias/PLAN DE FRECUENCIAS NUEVO AV-BZ CAD 2007-Presentación1.pdf" type="application/pdf" width="100%" height="1000px"></iframe>
+        <iframe src="../../../admi_general/mecanico/plan_de_frecuencias/planos_plan_de_frecuencias/PLAN DE FRECUENCIA.pdf" type="application/pdf" width="100%" height="1000px"></iframe>
       </div>
     </body>
 </html>

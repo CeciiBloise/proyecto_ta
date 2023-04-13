@@ -1,5 +1,4 @@
 <?php
-/*anda, tengo que ponerle algo que me diga que el legajo esta repetido*/
 include("../../../conexion_y_sesion/conexion.php");
 $conexion=conectar();
 if (!$conexion) {
@@ -12,10 +11,9 @@ if(isset($_POST['subir'])){
     $nombre = mysqli_real_escape_string($conexion, $_POST['nombre']);
     $alias = mysqli_real_escape_string($conexion, $_POST['alias']);
     $dni = mysqli_real_escape_string($conexion, $_POST['dni']);
-    $fecha_de_nacimiento = mysqli_real_escape_string($conexion, $_POST['fecha_de_nacimiento']);
-    if(empty($fecha_de_nacimiento)){
-        $fecha_de_nacimiento = "----/--/--";
-    }
+
+    $fecha_de_nacimiento = date('d-m-Y', strtotime(mysqli_real_escape_string($conexion, $_POST['fecha_de_nacimiento'])));
+
     $direccion = mysqli_real_escape_string($conexion, $_POST['direccion']);
     $celular = mysqli_real_escape_string($conexion, $_POST['celular']);
     $mail = mysqli_real_escape_string($conexion, $_POST['mail']);
@@ -23,10 +21,8 @@ if(isset($_POST['subir'])){
     $habilitaciones = mysqli_real_escape_string($conexion, $_POST['habilitaciones']);
     $supervisor = mysqli_real_escape_string($conexion, $_POST['supervisor_cargo']);
 
-    $fecha_de_ingreso = mysqli_real_escape_string($conexion, $_POST['fecha_de_ingreso_a_la_empresa']);
-    if(empty($fecha_de_ingreso)){
-        $fecha_de_ingreso = "----/--/--";
-    }
+    $fecha_de_nacimiento = date('d-m-Y', strtotime(mysqli_real_escape_string($conexion, $_POST['fecha_de_ingreso_a_la_empresa'])));
+
     $rol = mysqli_real_escape_string($conexion, $_POST['roles_id']);
     $contraseña = mysqli_real_escape_string($conexion, $_POST['contraseña']);
 

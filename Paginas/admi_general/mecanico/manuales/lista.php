@@ -39,7 +39,7 @@ if(isset($_GET['columna'])){
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
         <!-- Estilos -->
         <link rel="stylesheet" href="../../../../CSS/estiloMenuHorizontal.css"/>
-        <link rel="stylesheet" href="../../../../CSS/estiloTablas.css"/>
+        <link rel="stylesheet" href="../../../../CSS/estiloTablaManual.css"/>
         <link rel="stylesheet" href="../../../../CSS/estiloBuscador.css"/>
 
         <script src="https://kit.fontawesome.com/3de4daf040.js" crossorigin="anonymous"></script>

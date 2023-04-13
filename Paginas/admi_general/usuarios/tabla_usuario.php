@@ -71,11 +71,7 @@
         </nav>
     </header>
 
-    <style>
-        .navMenu{
-            width: 160rem; /*Aca hay un error, deberia el menu ajustarse junto con la tabla */
-        }
-    </style>
+
 
     <body>
 
@@ -153,7 +149,7 @@
                         <th>Puesto</th>
                         <th>Habilitaciones</th>
                         <th>Supervisor</th>
-                        <th>Fecha de ingreso a la empresa</th>
+                        <th>Fecha de ingreso a la Empresa</th>
                         <th>Rol</th>
                         <th>Contraseña</th>
                         <th colspan="3"></th>
@@ -170,14 +166,14 @@
                         <td nowrap><?php echo $row['nombre']?></td>
                         <td nowrap><?php echo $row['alias']?></td>
                         <td><?php echo $row['dni']?></td>
-                        <td><?php echo date('d/m/Y', strtotime($row['fecha_de_nacimiento']))?></td>
+                        <td><?php echo $row['fecha_de_nacimiento']?></td>
                         <td nowrap><?php echo $row['direccion']?></td>
                         <td><?php echo $row['celular']?></td>
                         <td><?php echo $row['mail']?></td>
                         <td nowrap><?php echo $row['puesto']?></td>
                         <td><?php echo $row['habilitaciones']?></td>
                         <td><?php echo $row['supervisor_cargo']?></td>
-                        <td><?php echo date('d/m/Y', strtotime($row['fecha_de_ingreso_a_la_empresa']))?></td>
+                        <td nowrap><?php echo $row['fecha_de_ingreso_a_la_empresa']?></td>
                         <td><?php echo $row['nombre_rol']?></td>
                         <td><?php echo $row['contraseña']?></td>
                     

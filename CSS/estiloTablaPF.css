@@ -1,10 +1,10 @@
 /*Estilos tablas*/
 .content-table{ 
     border-collapse: collapse; 
-    margin: 25px 0;  
-    min-width: 150px;
     table-layout:auto;
-    padding: 1rem;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
 }
 th, td{ 
     padding: 12px 15px;
@@ -36,4 +36,8 @@ body::-webkit-scrollbar{
 }
 body::-webkit-scrollbar-thumb{
     background: #34495E; /*color de la barra*/
+}
+
+@media (max-width: 400px) {
+ /* Aca va la adaptacion a mobile */
 }

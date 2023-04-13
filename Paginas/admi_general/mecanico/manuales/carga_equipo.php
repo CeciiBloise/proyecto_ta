@@ -51,7 +51,7 @@
 
     <body>
         <div class="form_carga">
-            <form action="insertar_bd.php" method="POST" enctype="multipart/form-data" class="form">
+            <form action="insertar_bd.php" method="POST" placeholder="Manual_titulo" enctype="multipart/form-data" class="form">
                 <h1 class="titulo">Carga de Manuales</h1>  
 
                 <div class="inputContainer">

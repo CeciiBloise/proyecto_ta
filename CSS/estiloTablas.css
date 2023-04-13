@@ -1,11 +1,14 @@
 /*Estilos tablas*/
 
+.content-table {
+    display: block;
+    height: auto;
+    border: none;
+}
 table {
     border: 1px solid #85929E;
     border-collapse: collapse;
-    overflow-x: auto;
- }
-
+}
 caption{
     font-size: 25px;
     font-family: Arial;
@@ -24,7 +27,8 @@ th, td{
     padding: 12px 15px;
     text-align: middle;
     font-family: Arial; 
-    border: 1px solid #AEB6BF;    
+    border: 1px solid #AEB6BF;
+    border-collapse: collapse; 
 }
 
 tr:nth-child(even){

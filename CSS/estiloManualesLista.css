@@ -1,21 +1,26 @@
 .content-table {
     border-collapse: collapse;
-    margin: 25px 0;
-    min-width: 150px;
     table-layout: auto;
-    padding: 1rem;
-    margin: 0 auto; /* para centrar horizontalmente */
-    margin-left: 10px; /* nuevo */
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
 }
 
 th, td {
     text-transform: uppercase;
-    padding: 12px 15px;
     text-align: center; /* para centrar el contenido */
     font-family: Arial;
     border-bottom: solid 1px #AEB6BF;
     border: solid 1px #AEB6BF;
-    margin-right: 0px; /* nuevo */
+}
+
+td {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 50px
 }
 
 caption {
@@ -35,5 +40,15 @@ thead {
 
 a {
     color: black;
+    text-decoration: none;
   }
+
+@media(max-width: 400px) {
+    .content-table {
+        width: 350px
+    }
+    td {
+        width: 350px
+    }
+}
   
