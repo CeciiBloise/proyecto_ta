@@ -77,24 +77,24 @@
             
                 <caption><a href="tabla_plan_de_frecuencias.php" style="color:black; text-decoration: none;" >PLAN DE FRECUENCIAS</a></caption>
                 <thead>     
-                    <tr>
-                        <th scope="row">Paso a Nivel</th>
-                        <th colspan="2">Frecuencia</th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th scope="row">
-                        <div class="float-right">
-                            <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre_paso_nivel' && $_GET['tipo'] == 'ASC'): ?>
-                                <i class="fa-sharp fa-solid fa-arrow-up"></i>
-                            <?php else : ?>
-                                <a href="tabla_plan_de_frecuencias.php?columna=nombre_paso_nivel&tipo=asc"><i class="fa-sharp fa-solid fa-arrow-up"></i></a><!-- De A a Z ascendente-->
-                            <?php endif; ?>
-                            <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre_paso_nivel' && $_GET['tipo'] == 'DESC') : ?>
-                                 <i class="fa-sharp fa-solid fa-arrow-down"></i>
-                            <?php else : ?>
-                                 <a href="tabla_plan_de_frecuencias.php?columna=nombre_paso_nivel&tipo=desc"><i class="fa-sharp fa-solid fa-arrow-down"></i></a>
-                            <?php endif; ?>
+                        <tr>
+                            <th scope="row">Paso a Nivel</th>
+                            <th colspan="2">Frecuencia</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                            <div class="float-right">
+                                <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre_paso_nivel' && $_GET['tipo'] == 'ASC'): ?>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg>
+                                <?php else : ?>
+                                            <a href="tabla_plan_de_frecuencias.php?columna=nombre_paso_nivel&tipo=asc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg></a><!-- De A a Z ascendente-->
+                                <?php endif; ?>
+                                <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre_paso_nivel' && $_GET['tipo'] == 'DESC') : ?>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg>
+                                <?php else : ?>
+                                            <a href="tabla_plan_de_frecuencias.php?columna=nombre_paso_nivel&tipo=desc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg></a>
+                                <?php endif; ?>
                             </div>
                         </th>
                         <th>Asc</th>

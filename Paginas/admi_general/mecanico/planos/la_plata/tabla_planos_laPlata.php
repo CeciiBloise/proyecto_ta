@@ -36,7 +36,9 @@
         <meta charset="utf-8" /> <!-- tipos de caracter -->
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
         <link rel="stylesheet" href="../../../../../CSS/estiloMenuHorizontal.css"/>
+        <link rel="stylesheet" href="../../../../../CSS/estiloBuscador.css"/>
         <link rel="stylesheet" href="../../../../../CSS/estiloTablas.css"/>
+
         <script src="https://kit.fontawesome.com/3de4daf040.js" crossorigin="anonymous"></script>
         <!-- Estilos -->
         <title>Trenes Argentinos</title> <!-- titulo de la pagina -->
@@ -71,37 +73,6 @@
       </nav>
     </header>
 
-    <style>
-        /*ancho del menu*/
-       /* .navMenu{
-        width: 157rem;
-        }*/
-                /*Barra Buscador*/
-        .buscador input[type=search]{
-            width:300px;
-            height:25px;
-            border-radius:5px;
-            border-color: #5D6D7E;
-        }
-          
-        .buscador{
-            /*float:right;*/
-            margin:7px;
-        }
-          
-        .boton{
-            background-color: #5D6D7E;
-            color: white;
-            /*float: right;*/
-            padding: 5px 10px;
-            margin-right: 16px;
-            font-size: 30px;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-        }
-    </style>
-
     <body>
 
         <div>
@@ -129,32 +100,32 @@
                         <th scope="row">Nombre
                             <div class="float-right">
                                 <!-- Funcionamiento de las flechas -->
-                                    <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre_laPlata' && $_GET['tipo'] == 'ASC'): ?>
-                                        <i class="fa-sharp fa-solid fa-arrow-up"></i>
-                                        <?php else : ?>
-                                            <a href="tabla_planos_laPlata.php?columna=nombre_laPlata&tipo=asc"><i class="fa-sharp fa-solid fa-arrow-up"></i></a><!-- De A a Z ascendente-->
-                                        <?php endif; ?>
-                                        <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre_laPlata' && $_GET['tipo'] == 'DESC') : ?>
-                                            <i class="fa-sharp fa-solid fa-arrow-down"></i>
-                                        <?php else : ?>
-                                            <a href="tabla_planos_laPlata.php?columna=nombre_laPlata&tipo=desc"><i class="fa-sharp fa-solid fa-arrow-down"></i></a>
-                                        <?php endif; ?>
+                                <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre_laPlata' && $_GET['tipo'] == 'ASC'): ?>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg>
+                                <?php else : ?>
+                                            <a href="nombre_laPlata.php?columna=nombre_laPlata&tipo=asc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg></a><!-- De A a Z ascendente-->
+                                <?php endif; ?>
+                                <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre_laPlata' && $_GET['tipo'] == 'DESC') : ?>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg>
+                                <?php else : ?>
+                                            <a href="nombre_laPlata.php?columna=nombre_laPlata&tipo=desc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg></a>
+                                <?php endif; ?>
                             </div>
                         </th>
                         <th>Descripcion</th>
                         <th>Categoria
                             <div class="float-right">
                                 <!-- Funcionamiento de las flechas -->
-                                    <?php if (isset($_GET['columna']) && $_GET['columna'] == 'categoria_laPlata' && $_GET['tipo'] == 'ASC'): ?>
-                                        <i class="fa-sharp fa-solid fa-arrow-up"></i>
-                                        <?php else : ?>
-                                            <a href="tabla_planos_laPlata.php?columna=categoria_laPlata&tipo=asc"><i class="fa-sharp fa-solid fa-arrow-up"></i></a><!-- De A a Z ascendente-->
-                                        <?php endif; ?>
-                                        <?php if (isset($_GET['columna']) && $_GET['columna'] == 'categoria_laPlata' && $_GET['tipo'] == 'DESC') : ?>
-                                            <i class="fa-sharp fa-solid fa-arrow-down"></i>
-                                        <?php else : ?>
-                                            <a href="tabla_planos_laPlata.php?columna=categoria_laPlata&tipo=desc"><i class="fa-sharp fa-solid fa-arrow-down"></i></a>
-                                        <?php endif; ?>
+                                <?php if (isset($_GET['columna']) && $_GET['columna'] == 'categoria_laPlata' && $_GET['tipo'] == 'ASC'): ?>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg>
+                                <?php else : ?>
+                                            <a href="nombre_laPlata.php?columna=categoria_laPlata&tipo=asc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg></a><!-- De A a Z ascendente-->
+                                <?php endif; ?>
+                                <?php if (isset($_GET['columna']) && $_GET['columna'] == 'categoria_laPlata' && $_GET['tipo'] == 'DESC') : ?>
+                                            <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg>
+                                <?php else : ?>
+                                            <a href="nombre_laPlata.php?columna=categoria_laPlata&tipo=desc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg></a>
+                                <?php endif; ?>
                             </div>
                         </th>
                         
