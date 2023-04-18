@@ -64,6 +64,11 @@
                 </div>
 
                 <div class="inputContainer">
+                  <label>Ramal:</label>
+                  <input type="text" name="ramal" placeholder="Ramal" value="<?php echo $row['ramal'] ?>"  required>
+                </div>
+
+                <div class="inputContainer">
                   <label>Frecuencia:</label>
                   <br>
                   <input type="text" name="frecuencia_asc" placeholder="Acendente" value="<?php echo $row['frecuencia_asc'] ?>" required>

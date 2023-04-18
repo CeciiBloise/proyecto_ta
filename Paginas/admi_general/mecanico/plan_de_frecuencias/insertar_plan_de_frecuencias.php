@@ -3,6 +3,7 @@ include("../../../../conexion_y_sesion/conexion.php");
 $conexion=conectar();
 
 $paso_nivel= mysqli_real_escape_string($conexion, $_POST['nombre_paso_nivel']);
+$ramal=$_POST['ramal'];
 $frecuencia_asc=$_POST['frecuencia_asc'];
 $frecuencia_desc=$_POST['frecuencia_desc'];
 $señal_asc=$_POST['señal_asc'];
@@ -18,13 +19,13 @@ $resultado = mysqli_query($conexion, $sql1);
 if(mysqli_num_rows($resultado) == 0){
     if($filtro == 'Si'){
     
-        $sql="INSERT INTO plan_de_frecuencias(nombre_paso_nivel,frecuencia_asc,frecuencia_desc,señal_asc,señal_desc,tension_asc,tension_desc,filtro,ubicacion) 
-        VALUES('$paso_nivel','$frecuencia_asc','$frecuencia_desc','$señal_asc','$señal_desc','$tension_asc','$tension_desc','$filtro','$ubicacion')";
+        $sql="INSERT INTO plan_de_frecuencias(nombre_paso_nivel,ramal,frecuencia_asc,frecuencia_desc,señal_asc,señal_desc,tension_asc,tension_desc,filtro,ubicacion) 
+        VALUES('$paso_nivel','$ramal','$frecuencia_asc','$frecuencia_desc','$señal_asc','$señal_desc','$tension_asc','$tension_desc','$filtro','$ubicacion')";
     
     }else{
         $ubicacion="-";
-        $sql="INSERT INTO plan_de_frecuencias(nombre_paso_nivel,frecuencia_asc,frecuencia_desc,señal_asc,señal_desc,tension_asc,tension_desc,filtro,ubicacion) 
-        VALUES('$paso_nivel','$frecuencia_asc','$frecuencia_desc','$señal_asc','$señal_desc','$tension_asc','$tension_desc','$filtro','$ubicacion')";
+        $sql="INSERT INTO plan_de_frecuencias(nombre_paso_nivel,ramal,frecuencia_asc,frecuencia_desc,señal_asc,señal_desc,tension_asc,tension_desc,filtro,ubicacion) 
+        VALUES('$paso_nivel','$ramal','$frecuencia_asc','$frecuencia_desc','$señal_asc','$señal_desc','$tension_asc','$tension_desc','$filtro','$ubicacion')";
     
     }
     $query=mysqli_query($conexion,$sql);

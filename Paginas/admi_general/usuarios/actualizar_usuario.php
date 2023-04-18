@@ -98,7 +98,7 @@
 
           <div class="inputContainer">
             <label class="label">Celular:</label>
-            <input class="input" type="tel" name="celular" placeholder="Celular" value="<?php echo $row['celular'] ?>">
+            <input class="input" type="number" name="celular" placeholder="Celular" value="<?php echo $row['celular'] ?>">
           </div>
 
           <div class="inputContainer">

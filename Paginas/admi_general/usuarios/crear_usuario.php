@@ -94,7 +94,7 @@
 
           <div class="inputContainer">
             <label>Celular:</label>
-            <input type="tel" name="celular" placeholder="Celular">
+            <input type="number" name="celular" placeholder="Celular">
           </div>
 
           <div class="inputContainer">

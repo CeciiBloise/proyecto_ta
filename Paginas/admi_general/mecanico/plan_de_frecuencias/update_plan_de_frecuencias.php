@@ -5,6 +5,7 @@ $conexion=conectar();
 $id=$_POST['id'];
 
 $paso_nivel= $_POST['nombre_paso_nivel'];
+$ramal= $_POST['ramal'];
 $frecuencia_asc=$_POST['frecuencia_asc'];
 $frecuencia_desc=$_POST['frecuencia_desc'];
 $señal_asc=$_POST['señal_asc'];
@@ -17,6 +18,7 @@ $ubicacion=$_POST['ubicacion'];
 if($filtro == 'Si'){
     $sql="UPDATE plan_de_frecuencias
     SET nombre_paso_nivel='".$paso_nivel."',
+    ramal='".$ramal."',
     frecuencia_asc='".$frecuencia_asc."',
     frecuencia_desc='".$frecuencia_desc."',
     señal_asc='".$señal_asc."',
@@ -30,6 +32,7 @@ if($filtro == 'Si'){
     $ubicacion="-";
     $sql="UPDATE plan_de_frecuencias
     SET nombre_paso_nivel='".$paso_nivel."',
+    ramal='".$ramal."',
     frecuencia_asc='".$frecuencia_asc."',
     frecuencia_desc='".$frecuencia_desc."',
     señal_asc='".$señal_asc."',
