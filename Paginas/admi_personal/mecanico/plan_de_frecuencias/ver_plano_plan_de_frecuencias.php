@@ -23,6 +23,12 @@ $legajo = $_SESSION['legajo'];
       <title>Trenes Argentinos</title> <!-- titulo de la pagina -->
     </head>
 
+    <style>
+      .mi-iframe{
+        margin-top: 25px;
+      }
+    </style>
+
     <header>
       <nav class="navMenu">
             <li><a href="../../admi_personal_mecanico.php" >Inicio</a></li>

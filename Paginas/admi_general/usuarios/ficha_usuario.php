@@ -28,7 +28,7 @@
       <meta charset="utf-8" /> <!-- tipos de caracter -->
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
       
-      <!-- Estilo -->
+      <!-- Estilos -->
       <link rel="stylesheet" href="../../../CSS/estiloMenuHorizontal.css"/>
       <link rel="stylesheet" href="../../../CSS/estiloFicha1.css"/>
 
@@ -80,7 +80,7 @@
             </div>
 
             <div class="inputContainer">
-              <label class="label">Fecha de nacimiento:</label>  <?php echo date('d/m/Y', strtotime($row['fecha_de_nacimiento'])); ?>
+              <label class="label">Fecha de nacimiento:</label>  <?php echo $row['fecha_de_nacimiento'] ?>
             </div>
 
             <div class="inputContainer">
@@ -108,7 +108,7 @@
             </div>
 
             <div class="inputContainer">
-              <label class="label">Fecha de ingreso a la empresa:</label>  <?php echo date('d/m/Y', strtotime($row['fecha_de_ingreso_a_la_empresa'])); ?>
+              <label class="label">Fecha de ingreso a la empresa:</label>  <?php echo $row['fecha_de_ingreso_a_la_empresa'] ?>
             </div>
           </form>
       </div>

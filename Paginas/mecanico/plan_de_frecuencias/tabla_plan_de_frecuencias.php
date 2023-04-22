@@ -77,6 +77,7 @@
                 <thead>     
                     <tr>
                         <th scope="row">Paso a Nivel</th>
+                        <th>Ramal</th>
                         <th colspan="2">Frecuencia</th>
                         <th></th>
                     </tr>
@@ -95,6 +96,21 @@
                             <?php endif; ?>
                             </div>
                         </th>
+                        <th>
+                        <div class="float-right">
+                            <?php if (isset($_GET['columna']) && $_GET['columna'] == 'ramal' && $_GET['tipo'] == 'ASC'): ?>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg>
+                            <?php else : ?>
+                                <a href="tabla_plan_de_frecuencias.php?columna=ramal&tipo=asc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg></a><!-- De A a Z ascendente-->
+                            <?php endif; ?>
+                            <?php if (isset($_GET['columna']) && $_GET['columna'] == 'legajo' && $_GET['tipo'] == 'DESC') : ?>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg>
+                            <?php else : ?>
+                                <a href="tabla_plan_de_frecuencias.php?columna=ramal&tipo=desc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg></a>
+                            <?php endif; ?>
+                        </div>
+
+                        </th>
                         <th>Asc</th>
                         <th>Desc</th>
                         <th colspan="2"></th>
@@ -104,10 +120,11 @@
                     <?php
                          while($row=mysqli_fetch_array($query)){
                     ?>
-                    <tr>
+                    <tr align="center">
                     <td scope="col"><?php echo $row['nombre_paso_nivel']?></td>
-                    <td nowrap><?php echo $row['frecuencia_asc']?></td>
-                    <td nowrap><?php echo $row['frecuencia_desc']?></td>
+                    <td ><?php echo $row['ramal']?></td>
+                    <td ><?php echo $row['frecuencia_asc']?></td>
+                    <td ><?php echo $row['frecuencia_desc']?></td>
              
                     <td><a href="ver_mas_info.php?id=<?php echo $row['id_plan_de_frecuencia']?>">Mas Información</a></td>
                     </tr>

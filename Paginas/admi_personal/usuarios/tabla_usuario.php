@@ -65,15 +65,10 @@
     <header>
       <nav class="navMenu">
             <li><a href="../inicio_personal.php" >Inicio</a></li>
-            <li class="legajo"><a href="#"><?php echo $legajo; ?></a></li>
+            <li class="legajo"><a href="#"><?php echo $legajo?></a></li>
       </nav>
     </header>
 
-    <style>
-        .navMenu{
-            width: 160rem; /*Aca hay un error, deberia el menu ajustarse junto con la tabla */
-        }
-    </style>
 
     <body>
 
@@ -101,32 +96,32 @@
                     <tr>
                         <th scope="row">Legajo</th>
                         <th>Apellido
-                            <div class="float-right">
-                                    <?php if (isset($_GET['columna']) && $_GET['columna'] == 'apellido' && $_GET['tipo'] == 'ASC'): ?>
-                                        <i class="fa-sharp fa-solid fa-arrow-up"></i>
-                                        <?php else : ?>
-                                            <a href="tabla_usuario.php?columna=apellido&tipo=asc"><i class="fa-sharp fa-solid fa-arrow-up"></i></a><!-- De A a Z ascendente-->
-                                        <?php endif; ?>
-                                        <?php if (isset($_GET['columna']) && $_GET['columna'] == 'apellido' && $_GET['tipo'] == 'DESC') : ?>
-                                            <i class="fa-sharp fa-solid fa-arrow-down"></i>
-                                        <?php else : ?>
-                                            <a href="tabla_usuario.php?columna=apellido&tipo=desc"><i class="fa-sharp fa-solid fa-arrow-down"></i></a>
-                                        <?php endif; ?>
-                            </div>
+                        <div class="float-right">
+                            <?php if (isset($_GET['columna']) && $_GET['columna'] == 'apellido' && $_GET['tipo'] == 'ASC'): ?>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg>
+                            <?php else : ?>
+                                <a href="tabla_usuario.php?columna=apellido&tipo=asc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg></a><!-- De A a Z ascendente-->
+                            <?php endif; ?>
+                            <?php if (isset($_GET['columna']) && $_GET['columna'] == 'apellido' && $_GET['tipo'] == 'DESC') : ?>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg>
+                            <?php else : ?>
+                                <a href="tabla_usuario.php?columna=apellido&tipo=desc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg></a>
+                            <?php endif; ?>
+                        </div>
                         </th>
                         <th>Nombre
-                            <div class="float-right">
-                                    <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre' && $_GET['tipo'] == 'ASC'): ?>
-                                        <i class="fa-sharp fa-solid fa-arrow-up"></i>
-                                        <?php else : ?>
-                                            <a href="tabla_usuario.php?columna=nombre&tipo=asc"><i class="fa-sharp fa-solid fa-arrow-up"></i></a><!-- De A a Z ascendente-->
-                                        <?php endif; ?>
-                                        <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre' && $_GET['tipo'] == 'DESC') : ?>
-                                            <i class="fa-sharp fa-solid fa-arrow-down"></i>
-                                        <?php else : ?>
-                                            <a href="tabla_usuario.php?columna=nombre&tipo=desc"><i class="fa-sharp fa-solid fa-arrow-down"></i></a>
-                                        <?php endif; ?>
-                            </div>
+                        <div class="float-right">
+                            <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre' && $_GET['tipo'] == 'ASC'): ?>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg>
+                            <?php else : ?>
+                                <a href="tabla_usuario.php?columna=nombre&tipo=asc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M450 896V370L202 618l-42-42 320-320 320 320-42 42-248-248v526h-60Z"/></svg></a><!-- De A a Z ascendente-->
+                            <?php endif; ?>
+                            <?php if (isset($_GET['columna']) && $_GET['columna'] == 'nombre' && $_GET['tipo'] == 'DESC') : ?>
+                                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg>
+                            <?php else : ?>
+                                <a href="tabla_usuario.php?columna=nombre&tipo=desc"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 96 960 960" width="20"><path d="M480 896 160 576l42-42 248 248V256h60v526l248-248 42 42-320 320Z"/></svg></a>
+                            <?php endif; ?>
+                        </div>
                         </th>
                         <th>Alias</th>
                         <th>Direccion</th>

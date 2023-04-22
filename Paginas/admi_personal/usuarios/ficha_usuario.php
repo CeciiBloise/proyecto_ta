@@ -46,14 +46,13 @@
     <body>
       <div class="form_carga">
           <form action="#" method="POST" class="form">
-    
-            <div class="inputContainer">  
+            <div class="imagen-container">  
               <?php 
                 $imagen = "../../admi_general/usuarios/imagen_usuarios/".$row['imagen'];
                 if(file_exists($imagen)) {
-                  echo '<img src="'.$imagen.'" width="300" height="200" class="imagen"/>';
+                  echo '<img class="imagen" src="'.$imagen.'"/>';
                 } else {
-                  echo '<img src="../../admi_general/usuarios/imagen_usuarios/sin_foto/sin_foto.png" width="300" height="200" class="imagen"/>';
+                  echo '<img src="../../admi_general/usuarios/imagen_usuarios/sin_foto/sin_foto.png" class="imagen"/>';
                 }
               ?>
             </div>

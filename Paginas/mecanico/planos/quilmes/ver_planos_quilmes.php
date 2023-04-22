@@ -28,6 +28,12 @@
 
       <title>Trenes Argentinos</title> <!-- titulo de la pagina -->
     </head>
+
+    <style>
+      .mi-iframe{
+        margin-top: 25px;
+      }
+    </style>
   
     <header>
       <nav class="navMenu">

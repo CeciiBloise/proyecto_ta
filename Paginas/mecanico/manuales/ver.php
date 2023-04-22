@@ -27,10 +27,10 @@ $url="../../admi_general/mecanico/manuales/pdf_manuales/".$carpeta;
 while($elemento=readdir($directorio)){
     if($elemento != '.' && $elemento != '..'){
         if(is_dir($directorio.$elemento)){
-            $listar .="<ul><a href='$url/$elemento' target='_parent'>$elemento</a></ul><br/>";
+            $listar .="<ul><a href='$url/$elemento' target='_blank'>$elemento</a></ul><br/>";
         }else{
             //error_reporting(0);
-            $listar .="<ul><a href='$url/$elemento' target='_parent'>$elemento</a></ul><br/>";   
+            $listar .="<ul><a href='$url/$elemento' target='_blank'>$elemento</a></ul><br/>";   
         }
     }
 }
@@ -56,7 +56,7 @@ while($elemento=readdir($directorio)){
       <nav class="navMenu">
       <li><a href="../inicio_mecanico.php" >Inicio</a></li>
             <li><a href="lista.php">Manuales</a></li>
-            <li><a href="../../../conexion_y_sesion/logout.php" >Cerrar Sesion</a></li>
+            <li class="legajo"><a href="#"><?php echo $legajo; ?></a></li>
       </nav>
     </header>
     <body>

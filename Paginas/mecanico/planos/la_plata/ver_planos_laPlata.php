@@ -29,6 +29,12 @@
       <title>Estacion Quilmes</title> <!-- titulo de la pagina -->
     </head>
 
+    <style>
+      .mi-iframe{
+        margin-top: 25px;
+      }
+    </style>
+
     <header>
       <nav class="navMenu">
             <li><a href="../inicio_planos.php" >inicio</a></li>
